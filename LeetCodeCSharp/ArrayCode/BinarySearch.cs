@@ -13,14 +13,19 @@ namespace LeetCodeCSharp.ArrayCode
             //左闭右开思路
             int lP = 0;
             int rP = nums.Length;
-            int middle = (lP + rP) >>> 1;
-            while (lP < rP) {
-                if (target == nums[middle]) { 
+            int middle;
+            while (lP < rP)
+            {
+                middle = (lP + rP) >>> 1;
+                if (target == nums[middle])
+                {
                     return middle;
-                }else if (target > nums[middle])
+                }
+                else if (target > nums[middle])
                 {
                     lP = middle + 1;
-                }else
+                }
+                else
                 {
                     rP = middle;
                 }
