@@ -12,3 +12,4 @@ D:\Code\LeetCode\LeetCodeCSharp\obj\Debug\net8.0\refint\LeetCodeCSharp.dll
 D:\Code\LeetCode\LeetCodeCSharp\obj\Debug\net8.0\LeetCodeCSharp.pdb
 D:\Code\LeetCode\LeetCodeCSharp\obj\Debug\net8.0\LeetCodeCSharp.genruntimeconfig.cache
 D:\Code\LeetCode\LeetCodeCSharp\obj\Debug\net8.0\ref\LeetCodeCSharp.dll
+D:\Code\LeetCode\LeetCodeCSharp\obj\Debug\net8.0\LeetCodeCSharp.sourcelink.json
