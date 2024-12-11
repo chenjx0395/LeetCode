@@ -7,7 +7,7 @@ void Case02()
 {
     int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
     int value = 2;
-    RemoveElementCase.RemoveElement(nums, value);
+    RemoveElementCase.RemoveElement1(nums, value);
 }
 
 

@@ -8,7 +8,23 @@ namespace LeetCodeCSharp.ArrayCode
 {
     internal class RemoveElementCase
     {
-        public static int RemoveElement(int[] nums, int val)
+
+        public static int RemoveElement1(int[] nums , int val)
+        {
+            int i = 0;
+            foreach (var item in nums)
+            {
+                if(item != val)
+                {
+                    nums[i] = item; 
+                    i++;
+                }
+            }
+            return i;
+        }
+
+
+        public static int RemoveElement2(int[] nums, int val)
         {
             int length = nums.Length;
             int count = 0;
@@ -41,7 +57,7 @@ namespace LeetCodeCSharp.ArrayCode
                 }
                 right--;
             }
-            return count;
+            return length - count;
         }
 
         // 找出数组最小值的索引
