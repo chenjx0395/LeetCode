@@ -1,5 +1,17 @@
 ﻿using LeetCodeCSharp.ArrayCode;
 
+
+//3. 长度最小的子数组
+Case3();
+
+void Case3()
+{
+    int[] nums = { 2, 3, 1, 2, 4, 3 };
+    int target = 7;
+    MinSubArrayLenCase.MinSubArrayLen(target, nums);
+}
+
+
 //2.移除元素
 
 Case02();
