@@ -12,15 +12,30 @@ namespace ArrayCode
     {
         private static void Main(string[] args)
         {
+
+
             //3. 最小长度子数组
-            Case3();
+            // Case3();
             //2.删除元素
             // Case02();
             // 1.二分查找
             //Case01();
+            //螺旋矩阵2
+            Case4();
         }
 
-
+        public static void Case4()
+        {
+            var a =  GenerateMatrixCase.GenerateMatrix(3);
+            foreach (var i in a)
+            {
+                foreach (var i1 in i)
+                {
+                    Console.Write(i1+"  ");
+                }
+                Console.WriteLine();
+            }
+        }
 
         public static void Case3()
         {

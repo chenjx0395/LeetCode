@@ -10,7 +10,7 @@ namespace ArrayCode
     {
         public static int Search(int[] nums, int target)
         {
-            //左闭右开思路
+            //左闭右开思路    
             int lP = 0;
             int rP = nums.Length;
             int middle;
