@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCodeCSharp.ArrayCode
+namespace ArrayCode
 {
     internal class BinarySearch
     {
@@ -16,7 +16,7 @@ namespace LeetCodeCSharp.ArrayCode
             int middle;
             while (lP < rP)
             {
-                middle = (lP + rP) >>> 1;
+                middle = (lP + rP) / 2;
                 if (target == nums[middle])
                 {
                     return middle;
