@@ -17,29 +17,39 @@
         {
             public static ListNode RemoveElements(ListNode head, int val)
             {
-                // 找到不是val值的头
-                while (head.next != null)
+                //前置哨兵
+                ListNode frontPoint = null;
+                switch (frontPoint)
                 {
-                    if (head.val != val)
-                    {
-                        break;
-                    }
 
-                    var temp = head;
-                    head = head.next;
-                    temp.next = null;
                 }
+
                 var point = head;
-                while (point?.next != null)
+                while (point != null)
                 {
-  
-                    if (point.next.val == val)
+                    if (point.val == val)
                     {
-                        var temp = point.next;
-                        point.next = temp.next;
-                        temp.next = null;
+                        // 头节点
+                        if (frontPoint == null)
+                        {
+                            head = point.next;
+                            point.next = null;
+                            point = head;
+                        }
+                        else
+                        {
+                            frontPoint.next = point.next;
+                            point.next = null;
+                            point = frontPoint.next;
+
+                        }
                     }
-                    point = point.next;
+                    else
+                    {
+                        // 前移
+                        frontPoint = point;
+                        point = point.next;
+                    }
 
                 }
                 return head;
