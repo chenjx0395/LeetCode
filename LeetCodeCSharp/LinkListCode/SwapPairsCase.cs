@@ -11,7 +11,7 @@ namespace LinkListCode
         public ListNode SwapPairs(ListNode head)
         {
             ListNode font = null, last = head;
-            if (head.next != null) head = head.next;
+            if (head?.next != null) head = head.next;
             while (last?.next != null)
             {
                 var next = last.next;
@@ -21,6 +21,7 @@ namespace LinkListCode
                 next.next = last;
                 last.next = temp;
                 last = temp;
+                
 
             }
             return head;

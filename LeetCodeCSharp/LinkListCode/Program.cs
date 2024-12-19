@@ -17,7 +17,20 @@ namespace LinkListCode
             //Console.WriteLine(b);
             // Case1();
             // Case2();
-            Case3();
+            // Case3();
+            Case4();
+        }
+
+        public static void Case4()
+        {
+            // ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, null))));
+            var head = new ListNode(1,null);
+            var newHead = RemoveNthFromEndCase.RemoveNthFromEnd(head, 1);
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine(newHead.val);
+                newHead = newHead.next;
+            }
         }
 
         public static void Case3()
