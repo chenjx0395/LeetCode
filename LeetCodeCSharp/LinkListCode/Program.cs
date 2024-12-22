@@ -18,7 +18,17 @@ namespace LinkListCode
             // Case1();
             // Case2();
             // Case3();
-            Case4();
+            // Case4();
+            Case5();
+        }
+
+        public static void Case5()
+        {
+            var node = new ListNode(8, new ListNode(4, new ListNode(5, null)));
+            ListNode headA = new ListNode(4, new ListNode(1, node));
+            ListNode headB = new ListNode(5, new ListNode(0, new ListNode(1, node)));
+            GetIntersectionNodeCase.GetIntersectionNode2(headA, headB);
+
         }
 
         public static void Case4()

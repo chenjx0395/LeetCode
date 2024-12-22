@@ -18,13 +18,7 @@ namespace LinkListCode
             var count = 0;
             if (n == length)
             {
-                while (count < length)
-                {
-                    target = target.next;
-                    count++;
-                }
-
-                if (target != null) target.next = null;
+                head = head.next;
             }
             else
             {
