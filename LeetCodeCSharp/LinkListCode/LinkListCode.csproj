@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetectCycleCase.cs" />
     <Compile Include="GetIntersectionNodeCase.cs" />
     <Compile Include="MyLinkedListCase.cs" />
     <Compile Include="Program.cs" />
